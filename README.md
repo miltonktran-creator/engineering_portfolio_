@@ -51,3 +51,7 @@ Edit files in VS Code, save them, then commit and push the changes to the reposi
 ## Before sharing
 
 Replace all starter text and placeholder links, add your actual resume PDF and project images, and verify the published site on both desktop and mobile. Do not upload private or confidential engineering files.
+
+
+## Resume
+The portfolio includes `assets/resume.pdf`, based on Milton Tran's supplied resume. The visible resume section is editable in `index.html`.
