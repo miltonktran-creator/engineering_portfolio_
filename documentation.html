@@ -185,11 +185,15 @@
 <div class="section-label">OVERVIEW</div>
 <p class="lead">I developed a two-axis robotic mechanism that positions an end effector in a 2D plane using two motors and interconnected arms arranged as a parallelogram linkage.</p>
 <h3>Cycloidal gearbox iteration</h3>
-<p>The first NEMA 17 cycloidal drive used a 15:1 reduction ratio and a footprint matching the motor. I used this prototype to test basic control code, accuracy, and repeatability. Testing showed that the discs could wobble inside the gearbox, and the M3 washers I added to separate them created unwanted friction.</p>
-<p>For the next iteration, I added grooves to the discs to hold bearing balls. The balls moved with the discs, reducing wobble while allowing smoother motion. The final drive used a 26:1 reduction ratio in a 70 mm diameter footprint, with the output moved to the outer drum. The design changes came directly from testing the first prototype and addressing its observed limitations.</p>
+<p>The first NEMA 17 cycloidal drive used a 15:1 reduction ratio and a footprint matching the motor. I used this prototype to test basic control code, accuracy, and repeatability. Testing showed that the discs could wobble inside the gearbox, and the M3 washers I added to separate&nbsp;them as a quick fix created unwanted friction.</p>
+<p>For the next iteration, I added grooves to the discs to hold bearing balls. The balls moved with the discs, reducing wobble while allowing smoother motion. The final drive used a 26:1 reduction ratio in a 70 mm diameter footprint, with the output moved to the outer drum. The design changes came directly from testing the first prototype and addressing its observed limitations. The main benefit of moving the output was the flexibility when mounting robotic components. Instead of needing a bolt pattern to mount parts, the cycloidal lobe pattern could be integrated directly into the part, or a spline pattern could be created on the outer drum.&nbsp;</p>
 <h3>Arm mechanism &amp; kinematics</h3>
-<p>I stacked two finalized cycloidal drives and attached a custom two-link arm to each outer-drum output. Connecting the arms created a parallelogram linkage for coordinated planar motion. I also derived inverse-kinematics equations by hand to calculate the motor angles needed to position the end effector at a target \((x,y)\) coordinate.</p>
-<a class="pdf-link" href="docs/02-axis-gimbal.pdf" target="_blank" rel="noopener noreferrer">OPEN PROJECT PDF ↗</a></div>
+<p>I stacked two finalized cycloidal drives and attached a custom two-link arm to each outer-drum output. Connecting the arms created a parallelogram linkage for coordinated planar motion. I also derived inverse-kinematics equations by hand to calculate the motor angles needed to position the end effector at a target (x,y) coordinate.</p>
+<div class="doc-links">
+<a class="pdf-link" href="docs/02-axis-gimbal.pdf" target="_blank" rel="noopener noreferrer">OPEN PROJECT PDF ↗</a>
+<a class="pdf-link" href="https://docs.google.com/spreadsheets/d/1UxlztyJK0CjPpsQT1wZKDAXogt7XbHDfZzbfkdL_rxo/edit?usp=sharing" target="_blank" rel="noopener noreferrer">OPEN GOOGLE SHEETS ↗</a>
+</div>
+</div>
 <div class="media-column">
 <figure class="media large"><img src="assets/projects/project-04-a.jpg" alt="Two-axis gimbal or planar robot assembly" onerror="this.closest('figure').classList.add('empty')">
 <figcaption><span>FIG. 11</span> Two-axis mechanism</figcaption>
@@ -198,6 +202,13 @@
 <figure class="media"><img src="assets/projects/project-04-b.jpg" alt="Cycloidal gearbox detail" onerror="this.closest('figure').classList.add('empty')">
 <figcaption><span>FIG. 12</span> Cycloidal drive</figcaption>
 </figure>
+<figure class="media empty"><img src="" alt="Additional gimbal detail image placeholder" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 13</span> Add second image</figcaption>
+</figure>
+</div>
+<div class="media note-media video-slot"><span>MP4</span>
+<div class="video-frame"><video controls preload="metadata" src="assets/projects/your-video.mp4">Your browser does not support the video tag.</video></div>
+<p>Replace the src with your final MP4 file path.</p>
 </div>
 </div>
 </div>
