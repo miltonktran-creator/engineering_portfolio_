@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,148 +8,195 @@
 <link rel="stylesheet" href="documentation.css">
 </head>
 <body>
-<header class="topbar">
-  <a class="wordmark" href="index.html#home">MILTON TRAN <span>/ PROJECT DOCUMENTATION</span></a>
-  <nav><a href="#contents">Contents</a><a href="index.html#projects">Projects</a><a href="mailto:miltonktran@gmail.com">Contact ↗</a></nav>
-</header>
-<main id="top">
-  <section class="masthead">
-    <div class="kicker">ENGINEERING NOTEBOOK</div>
-    <h1>Project<br><em>Documentation</em></h1>
-    <div class="masthead-bottom">
-      <p></p>
-      <div class="issue">MECHANICAL DESIGN<br>CAD · FABRICATION · ROBOTICS</div>
-    </div>
-  </section>
-
-  <section class="contents section" id="contents">
-    <div class="section-label"><span>01</span> FIELD GUIDE</div>
-    <div class="contents-grid">
-      <div>
-        <h2>Contents</h2>
-        <p class="muted">Jump directly to a project or browse the documentation in order.</p>
-      </div>
-      <ol class="toc-list">
-        <li><a href="#frc-2025"><span>01</span><strong>FRC 9470 · REEFSCAPE 2025</strong><small>Robot architecture, intake, elevator</small><b>↓</b></a></li>
-        <li><a href="#frc-2026"><span>02</span><strong>FRC 9470 · REBUILT 2026</strong><small>Fuel handling, shooter, robot rebuild</small><b>↓</b></a></li>
-        <li><a href="#cnc-router"><span>03</span><strong>Custom CNC Router</strong><small>Mechanical design, electronics, motion control</small><b>↓</b></a></li>
-        <li><a href="#gimbal"><span>04</span><strong>Two-Axis Gimbal</strong><small>Cycloidal drives, linkage, inverse kinematics</small><b>↓</b></a></li>
-      </ol>
-    </div>
-  </section>
-
-  <article class="project section" id="frc-2025">
-    <div class="project-head"><div class="project-no">PROJECT / 01</div><div class="project-title"><h2>FRC 9470 <em>REEFSCAPE</em></h2><p>2025 season · Two robot iterations</p></div><div class="project-kind">COMPETITION ROBOT</div></div>
-    <div class="article-grid">
-      <div class="story">
-        <div class="section-label">OVERVIEW</div>
-        <p class="lead">REEFSCAPE challenged teams to collect and score coral on a reef while moving algae to designated zones. Our robots focused on scoring across all reef levels with an elevator-mounted end effector, while also removing algae to create scoring opportunities for alliance partners.</p>
-        <h3>Robot 1 · Pinnacles Regional</h3>
-        <p>I led the robot layout and focused on the end effector, elevator, and drivetrain. WCP Swerve X2T modules helped preserve internal space for electronics and mechanisms. A belt-driven funnel guided coral into a horizontal roller end effector mounted on a two-stage cascade elevator, allowing the robot to reach all reef levels quickly.</p>
-        <p>The robot ranked 15th, became the first pick of Alliance 3, advanced to the quarterfinals, and won the Autonomous Award. The event established a strong baseline for the next iteration.</p>
-        <h3>Robot 2 · East Bay Regional</h3>
-        <p>I helped refine the end effector into a much lighter mechanism using bottom rollers and a single motor, reducing its weight to just over two pounds. The elevator was moved more towards the front of the robot, in order to move the end effector closer to the front of the robot. A gravity-fed funnel with 3D-printed star wheels improved coral alignment, feeding reliability, and intake area while removing the need for a powered funnel.</p>
-        <p>This robot ranked 16th and joined Alliance 6, reaching round 3 of playoffs.</p>
-        <p>Overall, this robot was a lighter, faster, and more optimized version of its predecessor,
-our Pinnacles robot and this time we were not 4 pounds overweight on load in day!</p>
-        <a class="pdf-link" href="docs/frc-9470-2025-reefscape.pdf" target="_blank" rel="noreferrer">OPEN PROJECT PDF ↗</a>
-      </div>
-      <div class="media-column">
-        <figure class="media large"><img src="assets/projects/project-01-a.jpg" alt="FRC 9470 2025 robot CAD or assembly view" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 01</span> Overall robot / CAD assembly</figcaption></figure>
-        <div class="media-pair">
-          <figure class="media"><img src="assets/projects/project-01-b.gif" alt="FRC 9470 2025 robot detail" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 02</span> Mechanism detail</figcaption></figure>
-          <figure class="media"><img src="assets/projects/project-01-c.jpg" alt="FRC 9470 2025 robot detail view" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 03</span> Prototype / iteration</figcaption></figure>
-        </div>
-        <div class="media note-media"><span>IMAGE SPACE</span><p>Add intake, elevator, and end-effector close-ups here.</p></div>
-      </div>
-    </div>
-    <div class="project-footer"><span>TOOLS</span><b>Onshape</b><b>Fusion 360</b><b>OrcaSlicer</b><b>Mechanical integration</b></div>
-  </article>
-
-  <article class="project section" id="frc-2026">
-    <div class="project-head"><div class="project-no">PROJECT / 02</div><div class="project-title"><h2>FRC 9470 <em>REBUILT</em></h2><p>2026 season · Design, competition, rebuild</p></div><div class="project-kind">COMPETITION ROBOT</div></div>
-    <div class="article-grid">
-      <div class="story">
-        <div class="section-label">OVERVIEW</div>
-        <p class="lead">REBUILT centered on collecting and shooting fuel into alliance hubs. Our design priority was to maximize fuel throughput with a wide intake, fast internal transfer, and a high-output shooter.</p>
-        <h3>Robot 1 · District Events</h3>
-        <p>I helped establish the robot architecture around WCP Swerve X2T modules, whose profiles created more room for electronics and mechanisms. The 25-inch-wide intake could collect four fuel balls at once, while a hopper floor covered in 1.25-inch rollers moved fuel quickly toward the shooter. A three-lane shooter increased throughput, which we prioritized over accuracy so we could avoid the complexity of a turret. For our next district event, we added an aluminum tube in front of our intake rollers in order to protect it from high force impacts.</p>
-        <h3>Robot 2 · District Championship &amp; Worlds</h3>
-        <p>We rebuilt the robot from scratch on an SDS MK5n swerve base. I revised the intake for easier repair, strengthened the hopper walls, and changed the floor to use compliant wheels in the center with lighter carbon-fiber rollers elsewhere. The hopper floor could rotate to improve access to electrical systems, and the shooter became a full-width drum to maximize output.</p>
-        <p>Competition exposed weaknesses in intake durability, trench clearance, and shooter-hood rigidity. For Worlds, we rebuilt the intake with double-stacked 0.25-inch SRPP and added a bolt-and-bearing constraint to reduce hood vibration. The robot finished second in the Archimedes Division and joined Alliance 1 to win the division, then went 1–2 on Einstein Field.</p>
-        <p class="reflection">The rebuild reinforced the value of designing not only for performance, but also for durability, serviceability, and the conditions a robot experiences throughout a full competition season.</p>
-        <a class="pdf-link" href="docs/frc-9470-2026-rebuilt.pdf" target="_blank" rel="noreferrer">OPEN PROJECT PDF ↗</a>
-      </div>
-      <div class="media-column">
-        <figure class="media large"><img src="assets/projects/project-02-a.jpg" alt="FRC 9470 2026 robot overall view" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 04</span> Robot architecture</figcaption></figure>
-        <div class="media-pair">
-          <figure class="media"><img src="assets/projects/project-02-f.gif" alt="FRC 9470 2026 intake detail" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 05</span> Intake / hopper</figcaption></figure>
-          <figure class="media"><img src="assets/projects/project-02-g.jpg" alt="FRC 9470 2026 shooter detail" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 06</span> Shooter mechanism</figcaption></figure>
-        </div>
-        <div class="media-pair">
-          <figure class="media"><img src="assets/projects/project-02-b.jpg" alt="Robot rebuild detail" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 07</span> Rebuild iteration</figcaption></figure>
-          <figure class="media"><img src="assets/projects/project-02-c.jpg" alt="Competition robot detail" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 08</span> Final iteration</figcaption></figure>
-        </div>
-        <div class="media-pair">
-          <figure class="media"><img src="assets/projects/project-02-d.jpg" alt="Robot rebuild detail" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 07</span> Rebuild iteration</figcaption></figure>
-          <figure class="media"><img src="assets/projects/project-02-e.jpg" alt="Competition robot detail" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 08</span> Final iteration</figcaption></figure>
-        </div>
-      </div>
-    </div>
-    <div class="project-footer"><span>TOOLS</span><b>Onshape</b><b>Fusion 360</b><b>OrcaSlicer</b><b>Design iteration</b></div>
-  </article>
-
-  <article class="project section" id="cnc-router">
-    <div class="project-head"><div class="project-no">PROJECT / 03</div><div class="project-title"><h2>Custom <em>CNC Router</em></h2><p>Mechanical design · Electronics · Motion control</p></div><div class="project-kind">MACHINE DESIGN</div></div>
-    <div class="article-grid">
-      <div class="story">
-        <div class="section-label">OVERVIEW</div>
-        <p class="lead">This was my first project that combined mechanical design, electronics, and software into one machine. The goal was to build a computer-controlled router for cutting wood and plastic, as well as engraving small gifts and stationery.</p>
-        <h3>Design &amp; integration</h3>
-        <p>The frame used 2020 aluminum extrusions, while the motion system reused lead screws, linear rails, and belts salvaged from an old 3D printer. I designed and assembled the machine around four NEMA 17 stepper motors, with the two Y-axis motors sharing a driver.</p>
-        <p>An Arduino Uno R3 running GRBL controlled the motors. Universal G-code Sender handled homing, calibration, and machine controls, while Fusion 360 CAM converted models into toolpaths. A corded DeWalt router served as the spindle for cutting wood and plastic.</p>
-        <h3>Challenges &amp; lessons</h3>
-        <p>After the first cutting run, chips and dust accumulated around the belts and lead screws. The added resistance exceeded what the NEMA 17 motors could reliably overcome. This revealed the importance of protecting motion components from debris; a spindle dust shield that redirects chips away from the drive system was identified as a key next improvement.</p>
-        <p class="reflection">Although the first run exposed a significant limitation, the project taught me to treat precision, contamination control, electrical integration, and software setup as connected parts of machine design.</p>
-        <a class="pdf-link" href="docs/custom-cnc-router.pdf" target="_blank" rel="noreferrer">OPEN PROJECT PDF ↗</a>
-      </div>
-      <div class="media-column">
-        <figure class="media large"><img src="assets/projects/project-03-a.jpg" alt="Custom CNC router assembly" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 09</span> CNC router assembly</figcaption></figure>
-        <div class="media-pair">
-          <figure class="media"><img src="assets/projects/project-03-b.jpg" alt="CNC router component detail" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 10</span> Motion system</figcaption></figure>
-          <div class="media note-media"><span>IMAGE SPACE</span><p>Add wiring, control electronics, and a photo of the first cutting test.</p></div>
-        </div>
-      </div>
-    </div>
-    <div class="project-footer"><span>TOOLS</span><b>Fusion 360</b><b>Arduino Uno</b><b>GRBL</b><b>Universal G-code Sender</b><b>3D printing</b></div>
-  </article>
-
-  <article class="project section" id="gimbal">
-    <div class="project-head"><div class="project-no">PROJECT / 04</div><div class="project-title"><h2>Two-Axis <em>Gimbal</em></h2><p>Gearbox Design · Inverse Kinematics · Motor Control</p></div><div class="project-kind">ROBOTICS / MECHANISMS</div></div>
-    <div class="article-grid">
-      <div class="story">
-        <div class="section-label">OVERVIEW</div>
-        <p class="lead">I developed a two-axis robotic mechanism that positions an end effector in a 2D plane using two motors and interconnected arms arranged as a parallelogram linkage.</p>
-        <h3>Cycloidal gearbox iteration</h3>
-        <p>The first NEMA 17 cycloidal drive used a 15:1 reduction ratio and a footprint matching the motor. I used this prototype to test basic control code, accuracy, and repeatability. Testing showed that the discs could wobble inside the gearbox, and the M3 washers I added to separate them created unwanted friction.</p>
-        <p>For the next iteration, I added grooves to the discs to hold bearing balls. The balls moved with the discs, reducing wobble while allowing smoother motion. The final drive used a 26:1 reduction ratio in a 70 mm diameter footprint, with the output moved to the outer drum. The design changes came directly from testing the first prototype and addressing its observed limitations.</p>
-        <h3>Arm mechanism &amp; kinematics</h3>
-        <p>I stacked two finalized cycloidal drives and attached a custom two-link arm to each outer-drum output. Connecting the arms created a parallelogram linkage for coordinated planar motion. I also derived inverse-kinematics equations by hand to calculate the motor angles needed to position the end effector at a target \((x,y)\) coordinate.</p>
-        <p class="reflection">The project emphasized an iterative engineering workflow: prototype a concept, test its behavior, identify the failure mode, revise the geometry, and integrate the improved mechanism into a larger system.</p>
-        <a class="pdf-link" href="docs/02-axis-gimbal.pdf" target="_blank" rel="noreferrer">OPEN PROJECT PDF ↗</a>
-      </div>
-      <div class="media-column">
-        <figure class="media large"><img src="assets/projects/project-04-a.jpg" alt="Two-axis gimbal or planar robot assembly" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 11</span> Two-axis mechanism</figcaption></figure>
-        <div class="media-pair">
-          <figure class="media"><img src="assets/projects/project-04-b.jpg" alt="Cycloidal gearbox detail" onerror="this.closest('figure').classList.add('empty')"><figcaption><span>FIG. 12</span> Cycloidal drive</figcaption></figure>
-          <div class="media note-media"><span>IMAGE SPACE</span><p>Add gearbox section views, FEA screenshots, and inverse-kinematics sketches.</p></div>
-        </div>
-      </div>
-    </div>
-    <div class="project-footer"><span>TOOLS &amp; METHODS</span><b>CAD</b><b>FEA</b><b>Cycloidal drives</b><b>Inverse kinematics</b><b>Prototyping</b></div>
-  </article>
-</main>
-<footer class="footer"><span>MILTON TRAN / PROJECT DOCUMENTATION</span><a href="#top">BACK TO TOP ↑</a><span>DESIGN · TEST · ITERATE</span></footer>
+<header class="topbar"><a class="wordmark" href="index.html#home">MILTON TRAN <span>/ PROJECT DOCUMENTATION</span></a><nav><a href="#contents">Contents</a><a href="index.html#projects">Projects</a><a href="mailto:miltonktran@gmail.com">Contact ↗</a></nav></header><main id="top">
+<section class="masthead">
+<div class="kicker">ENGINEERING NOTEBOOK</div>
+<h1>Project<br><em>Documentation</em></h1>
+<div class="masthead-bottom">
+<p></p>
+<div class="issue">MECHANICAL DESIGN<br>CAD &middot; FABRICATION &middot; ROBOTICS</div>
+</div>
+</section>
+<section class="contents section" id="contents">
+<div class="section-label"><span>01</span> FIELD GUIDE</div>
+<div class="contents-grid">
+<div>
+<h2>Contents</h2>
+<p class="muted">Jump directly to a project or browse the documentation in order.</p>
+</div>
+<ol class="toc-list">
+<li><a href="#frc-2025"><span>01</span><strong>FRC 9470 &middot; REEFSCAPE 2025</strong><small>Intake, Elevator, End Effector, Rebuild</small><b>&darr;</b></a></li>
+<li><a href="#frc-2026"><span>02</span><strong>FRC 9470 &middot; REBUILT 2026</strong><small>Shooter, Intake, Hopper, Rebuild</small><b>&darr;</b></a></li>
+<li><a href="#cnc-router"><span>03</span><strong>Custom CNC Router</strong><small>Mechanical design, Electronics, Gcode</small><b>&darr;</b></a></li>
+<li><a href="#gimbal"><span>04</span><strong>Two-Axis Gimbal</strong><small>Actuator Design, Geometry, Inverse Kinematics</small><b>&darr;</b></a></li>
+</ol>
+</div>
+</section>
+<article class="project section" id="frc-2025">
+<div class="project-head">
+<div class="project-no">PROJECT / 01</div>
+<div class="project-title">
+<h2>FRC 9470 <em>REEFSCAPE</em></h2>
+<p>2025 season &middot; Two robot iterations</p>
+</div>
+<div class="project-kind">COMPETITION ROBOT</div>
+</div>
+<div class="article-grid">
+<div class="story">
+<div class="section-label">OVERVIEW</div>
+<p class="lead">REEFSCAPE challenged teams to collect and score coral on a reef while moving algae to designated zones. Our robots focused on scoring across all reef levels with an elevator-mounted end effector, while also removing algae to create scoring opportunities for alliance partners.</p>
+<h3>Robot 1 &middot; Pinnacles Regional</h3>
+<p>I led the robot layout and focused on the end effector, elevator, and drivetrain. WCP Swerve X2T modules helped preserve internal space for electronics and mechanisms. A belt-driven funnel guided coral into a horizontal roller end effector mounted on a two-stage cascade elevator, allowing the robot to reach all reef levels quickly.</p>
+<p>The robot ranked 15th, became the first pick of Alliance 3, advanced to the quarterfinals, and won the Autonomous Award. The event established a strong baseline for the next iteration.</p>
+<h3>Robot 2 &middot; East Bay Regional</h3>
+<p>I helped refine the end effector into a much lighter mechanism using bottom rollers and a single motor, reducing its weight to just over two pounds. The elevator was moved more towards the front of the robot, in order to move the end effector closer to the scoring area. A gravity-fed funnel with 3D-printed TPU star wheels improved coral alignment, feeding reliability, and intake area while removing the need for a powered funnel.</p>
+<p>This robot ranked 16th and joined Alliance 6, reaching round 3 of playoffs.</p>
+<p>Overall, this robot was a lighter, faster, and more optimized version of its predecessor, our Pinnacles robot and this time we were not 4 pounds overweight on load in day!</p>
+<a class="pdf-link" href="docs/frc-9470-2025-reefscape.pdf" target="_blank" rel="noopener noreferrer">OPEN PROJECT PDF ↗</a></div>
+<div class="media-column">
+<figure class="media large"><img src="assets/projects/project-01-a.jpg" alt="FRC 9470 2025 robot CAD or assembly view" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 01</span> Overall robot / CAD assembly</figcaption>
+</figure>
+<div class="media-pair">
+<figure class="media"><img src="assets/projects/project-01-b.gif" alt="FRC 9470 2025 robot detail" onerror="this.closest('figure').classList.add('empty')">
+<figcaption></figcaption>
+</figure>
+<figure class="media"><img src="assets/projects/project-01-c.jpg" alt="FRC 9470 2025 robot detail view" onerror="this.closest('figure').classList.add('empty')">
+<figcaption></figcaption>
+</figure>
+</div>
+<div class="youtube-media">
+<!-- Replace VIDEO_ID with the ID from the YouTube video URL. -->
+<iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="FRC 9470 REEFSCAPE match footage" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<div class="project-footer"><span>TOOLS</span><b>Onshape</b><b>Fusion 360</b><b>OrcaSlicer</b><b>Mechanical integration</b></div>
+</article>
+<article class="project section" id="frc-2026">
+<div class="project-head">
+<div class="project-no">PROJECT / 02</div>
+<div class="project-title">
+<h2>FRC 9470 <em>REBUILT</em></h2>
+<p>2026 season &middot; Design, competition, rebuild</p>
+</div>
+<div class="project-kind">COMPETITION ROBOT</div>
+</div>
+<div class="article-grid">
+<div class="story">
+<div class="section-label">OVERVIEW</div>
+<p class="lead">REBUILT centered on collecting and shooting fuel into alliance hubs. Our design priority was to maximize fuel throughput with a wide intake, fast internal transfer, and a high-output shooter.</p>
+<h3>Robot 1 &middot; District Events</h3>
+<p>I helped establish the robot architecture around WCP Swerve X2T modules, whose profiles created flexibility for more room for electronics and mechanisms. The 25-inch-wide slap down intake that extended the hopper capacity when deploeyd. An active hopper floor covered in 1.25-inch rollers moved fuel quickly toward the shooter. A simple three-lane shooter increased throughput, which we prioritized over accuracy so we could avoid the complexity of a turret. For our next district event, we added an aluminum tube in front of our intake rollers in order to protect it from high force impacts.&nbsp;</p>
+<h3>Robot 2 &middot; District Championship &amp; Worlds</h3>
+<p>We rebuilt the robot from scratch on an SDS MK5n swerve base. I revised the intake for easier repair, strengthened the hopper walls, and changed the floor to use compliant wheels in the center with lighter carbon-fiber rollers elsewhere. The hopper floor could rotate to improve access to electrical systems, and the shooter became a full-width drum to maximize output.</p>
+<p>Competition exposed weaknesses in intake durability, trench clearance, and shooter-hood rigidity. For Worlds, we rebuilt the intake with double-stacked 0.25-inch SRPP and added a bolt-and-bearing constraint to reduce hood vibration. The robot finished second in the Archimedes Division and joined Alliance 1 to win the division, then went 1&ndash;2 on Einstein Field.</p>
+<a class="pdf-link" href="docs/frc-9470-2026-rebuilt.pdf" target="_blank" rel="noopener noreferrer">OPEN PROJECT PDF ↗</a></div>
+<div class="media-column">
+<figure class="media large"><img src="assets/projects/project-02-a.jpg" alt="FRC 9470 2026 robot overall view" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 04</span> Robot architecture</figcaption>
+</figure>
+<div class="media-pair">
+<figure class="media"><img src="assets/projects/project-02-f.gif" alt="FRC 9470 2026 intake detail" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 05</span> Intake / hopper</figcaption>
+</figure>
+<figure class="media"><img src="assets/projects/project-02-g.jpg" alt="FRC 9470 2026 shooter detail" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 06</span> Shooter mechanism</figcaption>
+</figure>
+</div>
+<div class="media-pair">
+<figure class="media"><img src="assets/projects/project-02-b.jpg" alt="Robot rebuild detail" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 07</span> Rebuild iteration</figcaption>
+</figure>
+<figure class="media"><img src="assets/projects/project-02-c.jpg" alt="Competition robot detail" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 08</span> Final iteration</figcaption>
+</figure>
+</div>
+<div class="media-pair">
+<figure class="media"><img src="assets/projects/project-02-d.jpg" alt="Robot rebuild detail" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 07</span> Rebuild iteration</figcaption>
+</figure>
+<figure class="media"><img src="assets/projects/project-02-e.jpg" alt="Competition robot detail" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 08</span> Final iteration</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="project-footer"><span>TOOLS</span><b>Onshape</b><b>Fusion 360</b><b>OrcaSlicer</b><b>Design iteration</b></div>
+</article>
+<article class="project section" id="cnc-router">
+<div class="project-head">
+<div class="project-no">PROJECT / 03</div>
+<div class="project-title">
+<h2>Custom <em>CNC Router</em></h2>
+<p>Mechanical design &middot; Electronics &middot; Motion control</p>
+</div>
+<div class="project-kind">MACHINE DESIGN</div>
+</div>
+<div class="article-grid">
+<div class="story">
+<div class="section-label">OVERVIEW</div>
+<p class="lead">This was my first project that combined mechanical design, electronics, and software into one machine. The goal was to build a computer-controlled router for cutting wood and plastic, as well as engraving small gifts and stationery.</p>
+<h3>Design &amp; integration</h3>
+<p>The frame used 2020 aluminum extrusions, while the motion system reused lead screws, linear rails, and belts salvaged from an old 3D printer. I designed and assembled the machine around four NEMA 17 stepper motors, with the two Y-axis motors sharing a driver.</p>
+<p>An Arduino Uno R3 running GRBL controlled the motors. Universal G-code Sender handled homing, calibration, and machine controls, while Fusion 360 CAM converted models into toolpaths. A corded DeWalt router served as the spindle for cutting wood and plastic.</p>
+<h3>Challenges &amp; lessons</h3>
+<p>After the first cutting run, chips and dust accumulated around the belts and lead screws. The added resistance exceeded what the NEMA 17 motors could reliably overcome. This revealed the importance of protecting motion components from debris; a spindle dust shield that redirects chips away from the drive system was identified as a key next improvement.</p>
+<p class="reflection">Although the first run exposed a significant limitation, the project taught me to treat precision, contamination control, electrical integration, and software setup as connected parts of machine design.</p>
+<a class="pdf-link" href="docs/custom-cnc-router.pdf" target="_blank" rel="noopener noreferrer">OPEN PROJECT PDF ↗</a></div>
+<div class="media-column">
+<figure class="media large"><img src="assets/projects/project-03-a.jpg" alt="Custom CNC router assembly" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 09</span> CNC router assembly</figcaption>
+</figure>
+<div class="media-pair">
+<figure class="media"><img src="assets/projects/project-03-b.jpg" alt="CNC router component detail" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 10</span> Motion system</figcaption>
+</figure>
+<div class="media note-media"><span>IMAGE SPACE</span>
+<p>Add wiring, control electronics, and a photo of the first cutting test.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="project-footer"><span>TOOLS</span><b>Fusion 360</b><b>Arduino Uno</b><b>GRBL</b><b>Universal G-code Sender</b><b>3D printing</b></div>
+</article>
+<article class="project section" id="gimbal">
+<div class="project-head">
+<div class="project-no">PROJECT / 04</div>
+<div class="project-title">
+<h2>Two-Axis <em>Gimbal</em></h2>
+<p>Gearbox Design &middot; Inverse Kinematics &middot; Motor Control</p>
+</div>
+<div class="project-kind">ROBOTICS / MECHANISMS</div>
+</div>
+<div class="article-grid">
+<div class="story">
+<div class="section-label">OVERVIEW</div>
+<p class="lead">I developed a two-axis robotic mechanism that positions an end effector in a 2D plane using two motors and interconnected arms arranged as a parallelogram linkage.</p>
+<h3>Cycloidal gearbox iteration</h3>
+<p>The first NEMA 17 cycloidal drive used a 15:1 reduction ratio and a footprint matching the motor. I used this prototype to test basic control code, accuracy, and repeatability. Testing showed that the discs could wobble inside the gearbox, and the M3 washers I added to separate them created unwanted friction.</p>
+<p>For the next iteration, I added grooves to the discs to hold bearing balls. The balls moved with the discs, reducing wobble while allowing smoother motion. The final drive used a 26:1 reduction ratio in a 70 mm diameter footprint, with the output moved to the outer drum. The design changes came directly from testing the first prototype and addressing its observed limitations.</p>
+<h3>Arm mechanism &amp; kinematics</h3>
+<p>I stacked two finalized cycloidal drives and attached a custom two-link arm to each outer-drum output. Connecting the arms created a parallelogram linkage for coordinated planar motion. I also derived inverse-kinematics equations by hand to calculate the motor angles needed to position the end effector at a target \((x,y)\) coordinate.</p>
+<p class="reflection">The project emphasized an iterative engineering workflow: prototype a concept, test its behavior, identify the failure mode, revise the geometry, and integrate the improved mechanism into a larger system.</p>
+<a class="pdf-link" href="docs/02-axis-gimbal.pdf" target="_blank" rel="noopener noreferrer">OPEN PROJECT PDF ↗</a></div>
+<div class="media-column">
+<figure class="media large"><img src="assets/projects/project-04-a.jpg" alt="Two-axis gimbal or planar robot assembly" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 11</span> Two-axis mechanism</figcaption>
+</figure>
+<div class="media-pair">
+<figure class="media"><img src="assets/projects/project-04-b.jpg" alt="Cycloidal gearbox detail" onerror="this.closest('figure').classList.add('empty')">
+<figcaption><span>FIG. 12</span> Cycloidal drive</figcaption>
+</figure>
+<div class="media note-media"><span>IMAGE SPACE</span>
+<p>Add gearbox section views, FEA screenshots, and inverse-kinematics sketches.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="project-footer"><span>TOOLS &amp; METHODS</span><b>CAD</b><b>FEA</b><b>Cycloidal drives</b><b>Inverse kinematics</b><b>Prototyping</b></div>
+</article>
+</main><footer class="footer"><span>MILTON TRAN / PROJECT DOCUMENTATION</span><a href="#top">BACK TO TOP &uarr;</a><span>DESIGN &middot; TEST &middot; ITERATE</span></footer>
 <script src="documentation.js"></script>
 </body>
 </html>
